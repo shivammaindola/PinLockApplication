@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Lock_activity"/>
+        <activity android:name=".set_code"></activity>
     </application>
 
 </manifest>
