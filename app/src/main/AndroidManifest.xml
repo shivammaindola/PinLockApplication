@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Lock_activity"/>
+        <activity android:name=".Disable_Passcode"/>
         <activity android:name=".set_code"></activity>
     </application>
 

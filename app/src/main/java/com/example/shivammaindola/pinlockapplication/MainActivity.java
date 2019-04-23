@@ -38,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
                     change_btn.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Intent intent = new Intent(MainActivity.this, set_code.class);
+                            Intent intent = new Intent(MainActivity.this, Disable_Passcode.class);
+                            intent.putExtra("set","1");
                             startActivity(intent);
                         }
                     });
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     turnoff_btn.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Intent intent = new Intent(MainActivity.this, set_code.class);
+                            Intent intent = new Intent(MainActivity.this, Disable_Passcode.class);
                             startActivity(intent);
                         }
                     });
