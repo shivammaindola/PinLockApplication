@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.shivammaindola.pinlockapplication">
 
+    <uses-feature android:name="android.hardware.fingerprint"
+        android:required="true"/>
+    <uses-permission
+        android:name="android.permission.USE_FINGERPRINT" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,9 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Lock_activity"/>
-        <activity android:name=".Disable_Passcode"/>
-        <activity android:name=".set_code"></activity>
+        <activity android:name=".Lock_activity" />
+        <activity android:name=".Disable_Passcode" />
+        <activity android:name=".set_code" />
+        <activity android:name=".fingerprint"></activity>
     </application>
 
 </manifest>

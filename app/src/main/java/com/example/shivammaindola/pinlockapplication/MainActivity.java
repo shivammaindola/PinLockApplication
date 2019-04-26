@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     final Context context=this;
     String code;
+    int i;
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -23,6 +24,14 @@ public class MainActivity extends AppCompatActivity {
         code= pref.getString("code",null);
         textView.setText(String.format("The true code is: %s", code));
         Button button= (Button)findViewById(R.id.btn);
+        Button button2= (Button)findViewById(R.id.btn2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, fingerprint.class);
+                startActivity(intent);
+            }
+        });
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

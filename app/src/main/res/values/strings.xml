@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PinLockApplication</string>
+    <string name="auth">Authenticate with fingerprint</string>
+    <string name="instructions">
+Place your fingertip on the Home button to verify your identity
+</string>
 </resources>

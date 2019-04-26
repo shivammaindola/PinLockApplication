@@ -2,21 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:background="#99b3ff"
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:id="@+id/profile_image"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_centerHorizontal="true"
-        android:src="@mipmap/ic_launcher" />
+    android:background="#333333"
+    android:layout_height="match_parent"
+    android:id="@+id/code_layout">
 
     <TextView
         android:id="@+id/profile_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/profile_image"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
         android:fontFamily="sans-serif-thin"
@@ -24,7 +17,7 @@
         android:maxLines="1"
         android:text="Please Unlock first"
         android:textColor="@color/white"
-        android:textSize="24sp" />
+        android:textSize="15sp" />
 
     <com.andrognito.pinlockview.IndicatorDots
         android:id="@+id/indicator_dots"
@@ -32,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/profile_name"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
         />
 
     <com.andrognito.pinlockview.PinLockView
@@ -41,8 +35,20 @@
         android:layout_below="@id/indicator_dots"
         android:layout_centerHorizontal="true"
         app:keypadButtonSize="72dp"
+        android:layout_marginTop="6dp"
         app:keypadShowDeleteButton="true"
-        app:keypadTextColor="@android:color/holo_green_dark"
-        app:keypadTextSize="14dp" />
+        app:keypadTextColor="@color/colorAccent"
+        app:keypadTextSize="28sp"
+        />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@id/pin_lock_view"
+        android:layout_marginTop="30dp"
+        />
 
 </RelativeLayout>
