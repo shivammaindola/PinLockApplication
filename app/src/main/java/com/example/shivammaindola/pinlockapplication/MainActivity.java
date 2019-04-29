@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Toast.makeText(MainActivity.this, "Just checking something", Toast.LENGTH_SHORT).show();
+        
     }
 
 }
