@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.support.v7.graphics.drawable.DrawableWrapper;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -73,5 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Toast.makeText(MainActivity.this, "Just checking something", Toast.LENGTH_SHORT).show();
     }
+
 }
