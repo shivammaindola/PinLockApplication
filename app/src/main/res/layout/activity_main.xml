@@ -17,16 +17,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Set password"
-        android:id="@+id/btn"/>
+        android:id="@+id/btn"
+        android:textAllCaps="false"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Check password"
-        android:id="@+id/btn1"/>
+        android:id="@+id/btn1"
+        android:textAllCaps="false"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="check Fingerprint"
-        android:id="@+id/btn2"/>
+        android:id="@+id/btn2"
+        android:textAllCaps="false"/>
 
 </LinearLayout>
